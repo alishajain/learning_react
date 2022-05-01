@@ -1,7 +1,7 @@
 import "./styles.css";
-import Expenses from "./components/Expenses";
+import Expenses from "./components/Expenses/Expenses";
 
-export default function App() {
+const App = ()=> {
   const expenses = [
     {
       id: 'e1',
@@ -24,6 +24,10 @@ export default function App() {
     },
   ];
   return (
-    <Expenses items={expenses}/>
+    <div>
+      <h2>Lets get started</h2>
+      <Expenses items={expenses}/>
+    </div> 
   );
 }
+export default App;
